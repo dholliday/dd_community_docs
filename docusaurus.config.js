@@ -46,8 +46,7 @@ const config = {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/dholliday/dd_community_docs",
         },
         blog: {
           showReadingTime: true,
@@ -57,8 +56,7 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/dholliday/dd_community_docs/docs",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -75,24 +73,31 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
+      image: "img/dd.png",
       navbar: {
-        title: "My Site",
+        title: "Don't Die Community",
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+          alt: "Don't Die Community",
+          src: "img/dd.png",
         },
         items: [
+          { to: "docs/mind/intro", label: "MIND", position: "left" },
+          { to: "docs/body/intro", label: "BODY", position: "left" },
+          { to: "docs/sleep/intro", label: "SLEEP", position: "left" },
+          { to: "docs/eat/intro", label: "EAT", position: "left" },
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
+            href: "https://dontdieapp.com",
+            label: "DD App",
+            position: "right",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
+            href: "https://github.com/dholliday/dd_community_docs",
+            label: "Contribute to Content",
             position: "right",
           },
         ],
@@ -101,46 +106,61 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "ABOUT",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                html: "Bryan Johnson is history's most measured human; has the best comprehensive biomarkers in the world, and doesn't take himself too seriously.",
+              },
+              {
+                label: "DD MOVEMENT",
+                href: "https://citizenship.dontdie.com/",
+              },
+              {
+                label: "DOCUMENTARY",
+                href: "https://www.netflix.com/title/81757532",
               },
             ],
           },
           {
-            title: "Community",
+            title: "FOLLOW",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                label: "INSTAGRAM",
+                href: "https://www.instagram.com/bryanjohnson_/",
               },
               {
                 label: "X",
-                href: "https://x.com/docusaurus",
+                href: "https://www.x.com/bryan_johnson",
+              },
+              {
+                label: "YOUTUBE",
+                href: "https://www.youtube.com/@BryanJohnson",
               },
             ],
           },
           {
-            title: "More",
+            title: "JOIN THE MOVEMENT",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "CITIZENSHIP",
+                href: "https://dontdie.com/#",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                label: "SUMMIT",
+                href: "https://dontdiesummit.com/",
+              },
+              {
+                label: "DON'T DIE APP",
+                href: "https://dontdieapp.com/",
+              },
+              {
+                label: "PROTOCOL",
+                href: "https://blueprint.bryanjohnson.com/",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `No Copyright. Open Source. Community-Driven. Don't Die.`,
       },
       prism: {
         theme: prismThemes.github,

@@ -1,45 +1,75 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "EAT",
+    href: "/docs/eat/intro",
+    Svg: require("@site/static/img/dd.png").default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        What you eat directly impacts how long and how well you live. This
+        section focuses on nutrition for longevity, covering superfoods,
+        balanced diets, fasting protocols, and supplements that support cellular
+        health. Learn how to fuel your body with the right nutrients to fight
+        inflammation, boost metabolism, and promote overall vitality.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "MIND",
+    href: "/docs/mind/intro",
+    Svg: require("@site/static/img/dd.png").default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        A sharp, resilient mind is key to living longer and better. This section
+        delves into cognitive health, stress management, emotional well-being,
+        and strategies to enhance neuroplasticity. Discover how mindfulness,
+        meditation, lifelong learning, and mental exercises can help maintain
+        clarity, creativity, and emotional balance as you age.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: "BODY",
+    href: "/docs/sleep/intro",
+    Svg: require("@site/static/img/dd.png").default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Your body is the foundation of longevity. This section explores the
+        latest science-backed strategies to maintain physical health, enhance
+        mobility, and build resilience against aging. From strength training and
+        cardiovascular fitness to recovery techniques and biohacking, we cover
+        everything you need to stay active, prevent disease, and optimize your
+        body's performance for a longer, healthier life.
+      </>
+    ),
+  },
+  {
+    title: "SLEEP",
+    href: "/docs/sleep/intro",
+    Svg: require("@site/static/img/dd.png").default,
+    description: (
+      <>
+        Quality sleep is the ultimate longevity hack. This section explores the
+        science of rest, covering sleep cycles, circadian rhythms, and proven
+        techniques to improve deep sleep. Discover how to optimize your
+        nighttime routine, enhance sleep quality, and wake up feeling
+        refreshed—so your body and mind can repair, recover, and thrive for
+        years to come.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description, href }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <a href={href}>
+          <img className={styles.featureSvg} src={Svg} />
+        </a>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
