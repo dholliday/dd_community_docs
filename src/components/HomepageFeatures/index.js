@@ -4,20 +4,6 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "EAT",
-    href: "/docs/eat/intro",
-    Svg: require("@site/static/img/dd.png").default,
-    description: (
-      <>
-        What you eat directly impacts how long and how well you live. This
-        section focuses on nutrition for longevity, covering superfoods,
-        balanced diets, fasting protocols, and supplements that support cellular
-        health. Learn how to fuel your body with the right nutrients to fight
-        inflammation, boost metabolism, and promote overall vitality.
-      </>
-    ),
-  },
-  {
     title: "MIND",
     href: "/docs/mind/intro",
     Svg: require("@site/static/img/dd.png").default,
@@ -58,6 +44,20 @@ const FeatureList = [
         nighttime routine, enhance sleep quality, and wake up feeling
         refreshed—so your body and mind can repair, recover, and thrive for
         years to come.
+      </>
+    ),
+  },
+  {
+    title: "EAT",
+    href: "/docs/eat/intro",
+    Svg: require("@site/static/img/dd.png").default,
+    description: (
+      <>
+        What you eat directly impacts how long and how well you live. This
+        section focuses on nutrition for longevity, covering superfoods,
+        balanced diets, fasting protocols, and supplements that support cellular
+        health. Learn how to fuel your body with the right nutrients to fight
+        inflammation, boost metabolism, and promote overall vitality.
       </>
     ),
   },
