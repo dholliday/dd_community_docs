@@ -36,6 +36,7 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+  plugins: [require.resolve("docusaurus-lunr-search")],
 
   presets: [
     [
@@ -46,7 +47,7 @@ const config = {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/dholliday/dd_community_docs",
+          editUrl: "https://github.com/dholliday/dd_community_docs/tree/main",
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +57,8 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/dholliday/dd_community_docs/docs",
+          editUrl:
+            "https://github.com/dholliday/dd_community_docs/tree/main/blog",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
