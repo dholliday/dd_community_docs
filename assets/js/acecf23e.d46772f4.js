@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdd_community_docs=self.webpackChunkdd_community_docs||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/dd_community_docs/blog","blogTitle":"Blog","authorsListPath":"/dd_community_docs/blog/authors"}')}}]);

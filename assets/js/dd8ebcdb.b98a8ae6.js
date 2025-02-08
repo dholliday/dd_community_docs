@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdd_community_docs=self.webpackChunkdd_community_docs||[]).push([[6193],{260:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/dd_community_docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
