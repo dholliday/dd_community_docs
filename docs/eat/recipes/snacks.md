@@ -11,3 +11,13 @@ This vegan kidney bean pâté is rich, creamy and full of plant-based goodness! 
 - Lemon
 - Warming spice such as cumin
 - Extra creaminess add tahini or olive oil
+
+## Wild blueberry & Hemp Seed Cacao Bars with rose petals (@jesskrichelle)
+
+![Image](../../../static/img/docs/recipes/snacks/wildbluberryhempseed1.png)
+![Image](../../../static/img/docs/recipes/snacks/wildbluberryhempseed2.png)
+
+- Wild blueberries
+- Hemp seeds
+- Cacoa Powder
+- Rose petals
