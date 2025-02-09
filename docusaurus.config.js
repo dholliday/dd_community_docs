@@ -36,7 +36,16 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-  plugins: [require.resolve("docusaurus-lunr-search")],
+  plugins: [
+    require.resolve("docusaurus-lunr-search"),
+    [
+      "@docusaurus/plugin-google-gtag",
+      {
+        trackingID: "GTM-5GZ4NPW5",
+        anonymizeIP: true,
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -92,6 +101,13 @@ const config = {
           { to: "docs/body/intro", label: "BODY", position: "left" },
           { to: "docs/sleep/intro", label: "SLEEP", position: "left" },
           { to: "docs/eat/intro", label: "EAT", position: "left" },
+          {
+            to: "docs/citizenship/intro",
+            label: "CITIZENSHIP",
+            position: "left",
+          },
+          { to: "docs/app/intro", label: "APP", position: "left" },
+
           {
             href: "https://dontdieapp.com",
             label: "DD App",

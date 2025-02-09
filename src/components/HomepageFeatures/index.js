@@ -61,6 +61,18 @@ const FeatureList = [
       </>
     ),
   },
+  {
+    title: "CITIZENSHIP",
+    href: "/docs/citizenship/intro",
+    Svg: require("@site/static/img/dd.png").default,
+    description: <>All about citizenship in the Don't Die community.</>,
+  },
+  {
+    title: "APP",
+    href: "/docs/app/intro",
+    Svg: require("@site/static/img/dd.png").default,
+    description: <>All about the Don't Die App.</>,
+  },
 ];
 
 function Feature({ Svg, title, description, href }) {

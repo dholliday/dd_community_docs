@@ -1,4 +1,4 @@
-position: 4 # float position is supported
-label: "EAT"
+position: 99.1 # float position is supported
+label: "DON'T DIE APP"
 collapsible: true # make the category collapsible
 collapsed: true # keep the category open by default
